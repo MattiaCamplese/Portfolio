@@ -1,6 +1,7 @@
 import { ArrowRight, Download } from "lucide-react";
 
 import { Section } from "@/components/Section";
+import { GitHubIcon } from "@/components/icons";
 
 export function Hero() {
   return (
@@ -39,6 +40,15 @@ export function Hero() {
             >
               <Download className="w-4 h-4" />
               Scarica CV
+            </a>
+            <a
+              href="https://github.com/MattiaCamplese"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-md font-medium text-zinc-100 border border-white/15 hover:border-white/30 hover:bg-white/5 transition-colors"
+            >
+              <GitHubIcon className="w-4 h-4" />
+              GitHub
             </a>
           </div>
         </div>
