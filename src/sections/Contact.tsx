@@ -21,7 +21,7 @@ export function Contact() {
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-50">Contatti</h2>
         <p className="mt-3 text-zinc-400">Aperto a opportunità e collaborazioni.</p>
         <div className="mt-12 rounded-2xl border border-white/10 bg-white/2 p-6 sm:p-10">
-          <ul className="grid grid-cols-2 gap-6">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {CONTACT_ITEMS.map(({ icon: Icon, label, href }) => {
               const content = (
                 <span className="flex items-center gap-3">
