@@ -39,7 +39,7 @@ export function Section({
     <section
       id={id}
       ref={ref}
-      className={`scroll-mt-20 transition-all duration-700 ease-out ${
+      className={`scroll-mt-20 transition-[opacity,transform] duration-700 ease-out ${
         visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
       } ${className}`}
     >
