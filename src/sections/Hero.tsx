@@ -63,7 +63,7 @@ export function Hero() {
             style={{ backgroundColor: "#dce4ec" }}
           >
             <img
-              src="/mattia.png"
+              src="/mattia.jpeg"
               alt="Mattia Camplese"
               className="w-full h-full object-contain"
             />
