@@ -1,4 +1,4 @@
-import { ExternalLink, ArrowRight } from "lucide-react";
+import { ExternalLink, ArrowRight, KeyRound } from "lucide-react";
 
 import { Section } from "@/components/Section";
 import { projects } from "@/lib/data";
@@ -35,6 +35,18 @@ export function Projects() {
                   </span>
                 ))}
               </div>
+              {project.credentials && (
+                <div className="mt-5 flex items-start gap-2 rounded-lg border border-white/8 bg-white/3 px-3 py-2.5">
+                  <KeyRound className="w-3.5 h-3.5 mt-0.5 shrink-0 text-zinc-500" />
+                  <div className="flex flex-col gap-0.5">
+                    {project.credentials.map((c) => (
+                      <span key={c.label} className="text-xs text-zinc-400">
+                        <span className="text-zinc-500">{c.label}: </span>{c.value}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
               <div className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-orange-500">
                 Live Site
                 <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />

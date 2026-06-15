@@ -11,6 +11,7 @@ export type Project = {
   description: string;
   tags: string[];
   url: string;
+  credentials?: { label: string; value: string }[];
 };
 
 export type StackGroup = {
@@ -72,6 +73,10 @@ export const projects: Project[] = [
       "Dashboard per l'analisi della sicurezza web. Upload report, score di rischio, grafici su vulnerabilità, porte, data leak e sicurezza email. Autenticazione JWT, multi-lingua e confronto storico tra scansioni.",
     tags: ["React", "TypeScript", "Hono", "JWT", "Recharts"],
     url: "https://data-analyzerfrontend.vercel.app/",
+    credentials: [
+      { label: "Email", value: "admin@data-analyzer.com" },
+      { label: "Password", value: "admin123" },
+    ],
   },
 ];
 
