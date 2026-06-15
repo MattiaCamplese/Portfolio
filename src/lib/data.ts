@@ -66,6 +66,13 @@ export const projects: Project[] = [
     tags: ["React", "Node", "Express", "JWT", "MongoDB"],
     url: "https://travel-experience-frontend-one.vercel.app/",
   },
+  {
+    title: "Data Analyzer",
+    description:
+      "Dashboard per l'analisi della sicurezza web. Upload report, score di rischio, grafici su vulnerabilità, porte, data leak e sicurezza email. Autenticazione JWT, multi-lingua e confronto storico tra scansioni.",
+    tags: ["React", "TypeScript", "Hono", "JWT", "Recharts"],
+    url: "https://data-analyzerfrontend.vercel.app/",
+  },
 ];
 
 export const stackGroups: StackGroup[] = [

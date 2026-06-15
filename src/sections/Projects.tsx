@@ -9,7 +9,7 @@ export function Projects() {
       <div className="max-w-6xl mx-auto px-5 sm:px-8">
         <div className="mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-50">Progetti</h2>
-          <p className="mt-2 text-zinc-500">2 deploy live</p>
+          <p className="mt-2 text-zinc-500">3 deploy live</p>
         </div>
         <div className="grid md:grid-cols-2 gap-5">
           {projects.map((project) => (
