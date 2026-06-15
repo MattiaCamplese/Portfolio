@@ -57,14 +57,14 @@ export const projects: Project[] = [
     title: "Blitzball",
     description:
       "Gestionale scalabile per tornei di calcetto. Anagrafica giocatori, calendario partite, classifica marcatori, statistiche live e albo d'oro.",
-    tags: ["React", "Node", "REST", "JWT", "SQL"],
+    tags: ["React", "PHP", "REST", "JWT", "SQL"],
     url: "https://blitzball-frontend.vercel.app",
   },
   {
     title: "Travel Experience",
     description:
       "Social/blog per condividere esperienze di viaggio. Autenticazione completa, profilo utente personalizzato e feed.",
-    tags: ["React", "Node", "Express", "JWT", "MongoDB"],
+    tags: ["React", "Laravel", "REST", "JWT", "MongoDB"],
     url: "https://travel-experience-frontend-one.vercel.app/",
   },
   {
