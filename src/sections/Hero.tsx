@@ -12,12 +12,14 @@ export function Hero() {
             Mattia Camplese
           </h1>
           <p className="mt-4 text-xl sm:text-2xl font-medium text-orange-500">
-            Full Stack Developer Junior
+            Frontend Developer
           </p>
           <p className="mt-8 max-w-2xl text-zinc-400 leading-relaxed">
-            Full Stack Developer junior con solide basi nello sviluppo web e forte interesse per
-            applicazioni scalabili e orientate all'utente. Background in ruoli gestionali: processi
-            strutturati, attenzione al dettaglio, obiettivi concreti.
+            Frontend Developer specializzato in React e TypeScript. Da settembre 2026 sviluppo
+            CyberSonar, piattaforma di cybersecurity in produzione usata da oltre 400 aziende
+            clienti. Lavoro con un flusso di sviluppo assistito da AI, mantenendo il controllo e la
+            revisione del codice prodotto. Dai ruoli operativi porto priorità chiare, attenzione al
+            dettaglio e orientamento alla consegna.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a

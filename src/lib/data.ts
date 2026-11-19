@@ -28,16 +28,24 @@ export type Education = {
 
 export const experiences: Experience[] = [
   {
-    role: "Full Stack Developer (in formazione)",
-    company: "InfoBasic",
-    location: "Pescara, PE",
-    period: "2025 — Oggi",
+    role: "Frontend Developer — CyberSonar",
+    company: "Digimetrica (per Defsox)",
+    location: "Tirocinio",
+    period: "Set 2026 — Oggi",
     bullets: [
-      "Frontend: HTML5, CSS3, JS ES6+, React, Tailwind, Bootstrap, Responsive Design.",
-      "Backend: Node.js, Express, PHP, Laravel, REST API, autenticazione JWT.",
-      "Database: MySQL, PostgreSQL; progettazione e ottimizzazione query SQL.",
-      "Dev & Tools: Git/GitHub, Docker, Postman, VS Code; AI Agents + Copilot.",
+      "Sviluppo di funzionalità frontend in React e TypeScript per CyberSonar, piattaforma di cybersecurity per l'analisi del rischio dei domini (vulnerabilità, data leak, servizi esposti), usata da oltre 400 aziende clienti.",
+      "Progettazione e sviluppo di Orbit Map, componente React + TypeScript riutilizzabile per esplorare gerarchie complesse un nodo alla volta: rendering SVG senza librerie grafiche, raggruppamento automatico di centinaia di nodi, navigazione da tastiera, tema chiaro/scuro e layout adattivo.",
+      "Gestione dei dati lato server con TanStack Query e dello stato client con Zustand; interfacce realizzate con shadcn/ui e Tailwind CSS.",
+      "Interventi full stack sulle API (Hono, Drizzle ORM, PostgreSQL) a supporto delle funzionalità sviluppate.",
+      "Sviluppo assistito da AI (agenti AI, Copilot) integrato nel lavoro quotidiano, con revisione del codice generato.",
     ],
+  },
+  {
+    role: "Full Stack Developer — Tirocinio",
+    company: "Manxx srl",
+    location: "Pescara",
+    period: "Mag — Giu 2026",
+    bullets: ["Progettazione e sviluppo di applicativi gestionali industriali con NocoBase."],
   },
   {
     role: "Assistant Manager / Responsabile Operativo",
@@ -54,41 +62,44 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
-    title: "Blitzball",
-    description:
-      "Gestionale scalabile per tornei di calcetto. Anagrafica giocatori, calendario partite, classifica marcatori, statistiche live e albo d'oro.",
-    tags: ["React", "PHP", "REST", "JWT", "SQL"],
-    url: "https://blitzball-frontend.vercel.app",
-  },
-  {
-    title: "Travel Experience",
-    description:
-      "Social/blog per condividere esperienze di viaggio. Autenticazione completa, profilo utente personalizzato e feed.",
-    tags: ["React", "Laravel", "REST", "JWT", "MongoDB"],
-    url: "https://travel-experience-frontend-one.vercel.app/",
-  },
-  {
     title: "Data Analyzer",
     description:
-      "Dashboard per l'analisi della sicurezza web. Upload report, score di rischio, grafici su vulnerabilità, porte, data leak e sicurezza email. Autenticazione JWT, multi-lingua e confronto storico tra scansioni.",
-    tags: ["React", "TypeScript", "Hono", "JWT", "Recharts"],
+      "Web app per analizzare e confrontare report di sicurezza dei domini. Dashboard con trend del rischio, tabella con ricerca, filtri, ordinamento e paginazione sincronizzati nell'URL, confronto tra scansioni storiche, export PDF, interfaccia IT/EN e dark mode.",
+    tags: ["React 19", "TypeScript", "TanStack Query", "Zustand", "Zod", "Recharts", "Hono", "Drizzle", "PostgreSQL"],
     url: "https://data-analyzerfrontend.vercel.app/",
     credentials: [
       { label: "Email", value: "admin@data-analyzer.com" },
       { label: "Password", value: "admin123" },
     ],
   },
+  {
+    title: "Blitzball",
+    description:
+      "Gestionale per tornei di calcetto: anagrafica giocatori, calendario partite, classifica marcatori, statistiche live e albo d'oro.",
+    tags: ["React", "PHP", "REST", "JWT", "SQL"],
+    url: "https://blitzball-frontend.vercel.app",
+  },
+  {
+    title: "Travel Experience",
+    description:
+      "Social/blog per condividere esperienze di viaggio, con autenticazione, profilo utente e feed.",
+    tags: ["React", "Laravel", "REST", "JWT", "PostgreSQL"],
+    url: "https://travel-experience-frontend-one.vercel.app/",
+  },
 ];
 
 export const stackGroups: StackGroup[] = [
   {
     label: "Frontend",
-    items: ["HTML5", "CSS3", "JS ES6+", "React", "Next.js", "Tailwind", "Bootstrap"],
+    items: ["React", "TypeScript", "JavaScript ES6+", "Next.js", "Tailwind CSS", "shadcn/ui", "Radix UI"],
   },
-  { label: "Backend", items: ["Node.js", "Express", "PHP", "Laravel", "REST", "JWT"] },
-  { label: "Database", items: ["MySQL", "PostgreSQL", "SQL"] },
-  { label: "Dev & Tools", items: ["Git", "GitHub", "Docker", "Postman", "VS Code"] },
-  { label: "AI Agents", items: ["Agenti AI", "Copilot", "LLM"] },
+  {
+    label: "Stato e dati",
+    items: ["TanStack Query", "Zustand", "React Hook Form", "Zod", "REST", "JWT", "Recharts"],
+  },
+  { label: "Backend", items: ["Node.js", "Hono", "Express", "PHP", "Laravel", "Drizzle ORM"] },
+  { label: "Database", items: ["PostgreSQL", "MySQL"] },
+  { label: "Strumenti", items: ["Git", "Vite", "Docker", "Postman", "NocoBase", "Agenti AI", "Copilot"] },
 ];
 
 export const education: Education[] = [
@@ -96,7 +107,7 @@ export const education: Education[] = [
     title: "Corso Full Stack Developer",
     institution: "InfoBasic",
     location: "Pescara, PE",
-    year: "Da 2025",
+    year: "Dal 2025",
   },
   {
     title: "Laurea in Economia e Management",
